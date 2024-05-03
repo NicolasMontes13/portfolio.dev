@@ -1,0 +1,68 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import LinkedInIcon from "../icons/LinkedIn.astro";
+import GmailIcon from "../icons/Gmail.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Experience from "../components/Experience.astro";
+import Briefcase from "../icons/Briefcase.astro";
+---
+
+<Layout title="Portfolio Nicolás Montes G. - Desarrollador de Software">
+  <main>
+    <SectionContainer class="py-44 pb-20">
+      <img
+        class="rounded-full w-12 h-12 mb-4"
+        src="https://unavatar.io/nicolas_mg_13"
+      />
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hey, soy Nicolás Montes <a
+          href="https://www.linkedin.com/in/nicolas-montes-gaitan-b98b38180"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible<span> para </span><span>trabajar</span></Badge>
+        </a>
+      </h1>
+      <h2 class="text-2xl text-wrap">
+        <span>+4 años de experiencia.</span>
+        <span class="text-yellow-200/90 opacity-80"
+          >Desarrollador de software.</span
+        >
+        <span class="text-red-200/90">De Armenia, Colombia.</span>
+        <span class="opacity-85"
+          >Especializado en hacer aplicaciones únicas.</span
+        >
+      </h2>
+
+      <nav class="flex gap-x-4 mt-8">
+        <SocialPill
+          href="https://www.linkedin.com/in/nicolas-montes-gaitan-b98b38180"
+        >
+          <LinkedInIcon class="size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/NicolasMontes13">
+          <GitHubIcon class="size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="">
+          <GmailIcon class="size-6" />
+          nicolasmontesg2304@gmail.com
+        </SocialPill>
+      </nav>
+      <SectionContainer />
+
+      <SectionContainer id="experiencia" class="py-40 pb-18">
+        <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 item-center">
+          <Briefcase class="size 8" />
+          Experiencia Laboral
+        </h2>
+        <Experience />
+      </SectionContainer>
+    </SectionContainer>
+  </main>
+</Layout>
